@@ -63,7 +63,7 @@
               then
                 (
                   (prev.${name}.overridePythonAttrs or prev.${name}.overrideAttrs) (
-                    available_versions.${builtins.trace (name + " matched to " + matched_version) matched_version} {
+                    available_versions.matched_version {
                       inherit
                         final
                         prev
